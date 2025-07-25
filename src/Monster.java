@@ -1,4 +1,4 @@
-public class Monster implements Creature {
+public abstract class Monster implements Creature {
     String name;
     int hp;
     char suffix;
@@ -17,6 +17,9 @@ public class Monster implements Creature {
         System.out.println(name + suffix + "HP:" + hp);
     }
 
+    public String getName() {
+        return name;
+    }
     public int getHp() {
         return this.hp;
     }
