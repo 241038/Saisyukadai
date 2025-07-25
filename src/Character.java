@@ -3,7 +3,7 @@ public abstract class Character implements Creature {
     private int hp;
 
     Character(String name, int hp) {
-        this.name = name;
+        this.setName(name);
         this.hp = hp;
     }
 
@@ -22,6 +22,7 @@ public abstract class Character implements Creature {
     public String getName() {
         return this.name;
     }
+    public void setName(String name) {this.name=name;}
     public int getHp() {
         return this.hp;
     }
