@@ -16,7 +16,7 @@ public abstract class Character implements Creature {
     }
 
     public void showStatus() {
-        System.out.println(name + ":hp" + hp);
+        System.out.println(name + " :hp" + hp);
     }
 
     public String getName() {
